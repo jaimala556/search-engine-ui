@@ -1,0 +1,10 @@
+.container1
+{
+    width: 100vw;
+    height: 75%;
+    /* border: 1px solid rgb(2, 2, 2); */
+    background-color: #2F44FD;
+    border-radius:100% 0% 15% 85% / 0% 46% 54% 100% ;
+    position: absolute;
+    z-index: -1;
+}

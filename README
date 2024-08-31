@@ -1,0 +1,41 @@
+must download the xampp server first for locally hosting purpose
+https://www.apachefriends.org/
+
+after installation 
+1. open the apache server
+2. open the MYSQL server and the view the project
+
+
+
+---> Must install the database into your system and create all the code according to the database file
+            database.sql
+
+
+----------------------------------------------------------------------------
+                                Mail configuration
+step 1
+in C:\xampp\php\php.ini file find the mail function and comment all these lines and paste these
+[mail function]
+SMTP=smtp.gmail.com
+smtp_port=465
+sendmail_from = yourmail@gmail.com
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+step 2
+in C:\xampp\sendmail\sendmail.ini
+paste these after comment the original line
+[sendmail]
+smtp_server=smtp.gmail.com
+smtp_port=465
+error_logfile=error.log
+debug_logfile=debug.log
+auth_username=yourmail@gmail.com
+auth_password= your mail password 
+force_sender=yourmail@gmail.com
+
+
+----------------------------------------------------------------------------------------
+Now all the information available here during the project execution
+step 1 make database in phpmyadmin following details available in the database.sql file
+step 2 check the localhost server is on and mysql also have to on otherwise the connection error
+step 3 type in browser localhost/searchengine open the index.html and all the roots are given to access the search engine
